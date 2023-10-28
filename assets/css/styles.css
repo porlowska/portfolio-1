@@ -137,7 +137,7 @@ img{
 
 #Project1{
   grid-area: Project1;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("/assets/images/Horiseon.png");
   
 }
 
@@ -159,7 +159,7 @@ img{
 
 #Project5{
   grid-area: Project5;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
 }
 
 .GridArea{
@@ -173,8 +173,9 @@ img{
   bottom: 10%;
 }
 
+
 .workOutline > a{
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--black);
   font-size: 1.2em;
   background-color: var(--beige);
