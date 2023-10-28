@@ -20,6 +20,10 @@ body {
   background-color: var(--beige);
   color: var(--black);
 }
+
+a:hover{
+  color: var(--hover);
+}
  
 /* header styling */
 header{
@@ -30,33 +34,21 @@ header{
 
 }
 
-/** .logo{
-  background: red;
-  height: 100px;
-  background-image: url("../images/Polly\ logo.png");
-  background-repeat: no-repeat;
-  background-position: left;
-}**/
-
 
 
 /* nav styling */
 
 h1{
   font-size: 2.25rem;
-
 }
 
 
 nav {
   display: flex;
-  
-  
 }
 
 nav > p{
-  display: flex;
-  
+  display: flex; 
 }
 
 p > a{
@@ -67,24 +59,26 @@ p > a{
   display: inline-block;
 }
 
+
+
 .hero-banner{
   position: relative;
 }
 .hero-banner > img{
   display: block;
   width: 100%;
-  height: 8rem;
+  height: 9rem;
   background-image: url(../images/Polly\ logo.png);
   background-repeat: repeat;
   background-position: center;
-
 }
 
-h2{
+h2{ /*https://www.bannerbear.com/blog/how-to-overlay-text-on-an-image-in-html-and-css/#:~:text=Overlaying%20Text%20on%20an%20Image%20in%20HTML%20and%20CSS,-HTML&text=In%20the%20body%20section%2C%20create,and%20add%20your%20text%20inside.&text=We%20know%20that%20in%20real,to%20contain%20an%20image%20only.*/
   position: absolute;
   background-color: var(--beige);
   right: 0;
   bottom: 0;
+  font-size: 1.7rem;
 }
 
 
@@ -93,7 +87,7 @@ h2{
 /* about secion styling*/
 h3{
   color: var(--pastel-red);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -107,7 +101,7 @@ h3{
 
 img{
  flex-grow: 1;
-  width: 75%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
 }
@@ -119,11 +113,10 @@ img{
 
 /* work secion styling*/
 
-#container{
+#work{
   display: grid;
-
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 8rem);
   grid-template-areas:
   "h3Work"
   "Project1"
@@ -131,7 +124,6 @@ img{
   "Project3"
   "Project4"
   "Project5";
-
 }
 
 #h3Work{
@@ -144,11 +136,13 @@ img{
 #Project1{
   grid-area: Project1;
   background-image: url("../images/02-portfolio-1.jpg");
+  
 }
 
 #Project2{
   grid-area: Project2;
   background-image: url("../images/02-portfolio-2.jpg");
+
 }
 
 #Project3{
@@ -166,6 +160,31 @@ img{
   background-image: url("../images/02-run-buddy.jpg");
 }
 
+.GridArea{
+  position: relative;
+}
+.workOutline{
+  background-color: var(--beige);
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
+.workOutline > a{
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.2em;
+  background-color: var(--beige);
+  margin: 0;
+}
+
+.workOutline >p{
+  margin: 0;
+  font-size: 0.85em;
+}
+
+
 /* contact section styling*/
 
 .contact{
@@ -182,9 +201,6 @@ img{
   padding-bottom: 0.5rem;
 }
 
-.links:hover{
-color: var(--hover);
-}
  
 
 /*footer styling */
