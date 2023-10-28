@@ -1,24 +1,200 @@
+/* color scheme from https://colorhunt.co/ */
+:root {
+  --beige: #FCF5ED;
+  --peach: #F4BF96;
+  --pastel-red: #CE5A67;
+  --black: #1F1717;
+  --hover: #CE5A67;
+
+}
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: var(--beige);
+  color: var(--black);
+}
+ 
+/* header styling */
+header{
+  display: flex;
+  background-color: var(--peach);
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/** .logo{
+  background: red;
+  height: 100px;
+  background-image: url("../images/Polly\ logo.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}**/
+
+
+
+/* nav styling */
+
+h1{
+  font-size: 2.25rem;
+
+}
+
+
+nav {
+  display: flex;
   
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
-  }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
+}
+
+nav > p{
+  display: flex;
   
-  p {
-    margin: 0;
-  }
+}
+
+p > a{
   
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.hero-banner{
+  position: relative;
+}
+.hero-banner > img{
+  display: block;
+  width: 100%;
+  height: 8rem;
+  background-image: url(../images/Polly\ logo.png);
+  background-repeat: repeat;
+  background-position: center;
+
+}
+
+h2{
+  position: absolute;
+  background-color: var(--beige);
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
+/* about secion styling*/
+h3{
+  color: var(--pastel-red);
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+img{
+ flex-grow: 1;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#aboutDetail{
+  padding: 0 2.5em;
+
+}
+
+/* work secion styling*/
+
+#container{
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "h3Work"
+  "Project1"
+  "Project2"
+  "Project3"
+  "Project4"
+  "Project5";
+
+}
+
+#h3Work{
+  grid-area: span;
+  text-align: center;
+  padding: 1rem;
+  margin: 0px auto;
+}
+
+#Project1{
+  grid-area: Project1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#Project2{
+  grid-area: Project2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#Project3{
+  grid-area: Project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#Project4{
+  grid-area: Project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#Project5{
+  grid-area: Project5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+/* contact section styling*/
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.links{
+  text-decoration: none;
+  color: var(--black);
+  font-family: monospace;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.links:hover{
+color: var(--hover);
+}
+ 
+
+/*footer styling */
+footer{
+  background-color: var(--peach);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+

@@ -6,51 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Polly's Portfolio // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <div class="logo"></div>
     <h1>Portfolio</h1>
     <nav>
-      <ul>
-        <li>
-          <a href="about" >About Me</a>
-        </li>
-        <li>
-          <a href="work">Work</a>
-        </li>
-        <li>
-          <a href="contact">Contact Me</a>
-        </li>
-        <li>
+       <p>
+          <a href="#about">About Me</a>
+        </p>
+        <p>
+          <a href="#work" >Work</a>
+        </p>
+        <p>
+          <a href="#contact">Contact Me</a>
+        </p>
+        <p>
           <a href="#">Resume</a>
-        </li>
-      </ul>
+        </p>
     </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div class="here-text">
-      <h2>Paulina Orlowska</h2>
-    </div>
+  <section class="hero-banner"> <!--imange container-->
+      <h2>Paulina Orlowska</h2> <!--overlay text-->
+      <img class="hero" src="assets/images/02-hero-bg.jpg" alt=""/>
+      <div class="logo"></div>
+
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-      <p>
+    <section class="about" id="about">
+      <h3>About Me</h3>
+      <img src="assets/images/Polly logo.png"/>
+      <p id="aboutDetail">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non erat porttitor, mattis nisi consectetur, vehicula odio. In a ex dolor. Donec consectetur suscipit diam, in porta nibh varius posuere. Cras sed placerat quam. Maecenas consequat purus vel aliquet egestas. In eget interdum felis. Duis tempor lorem nec pulvinar suscipit. Phasellus euismod nec eros sit amet posuere.
       </p>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="work" id="container">
+      <h3 id="h3Work">Work</h3>
 
       <div id="Project1" class="GridArea">
         <div class="ProjectTitle"> Project 1 </div>
@@ -80,16 +79,16 @@
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <a href="#" class="email">email</a>
-      <a href="#" class="phone">Phone</a>
-      <a href="#" class="github">GitHub</a>
-      <a href="#" class="linkedin">Linkedin</a>
+    <section class="contact" id="contact">
+      <h3>Contact Me</h3>
+      <a href="#" class="links" id="email">email</a>
+      <a href="#" class="links" id="phone">Phone</a>
+      <a href="#" class="links" id="github">GitHub</a>
+      <a href="#" class="links" id="linkedin">Linkedin</a>
     </section>
   </main>
   <footer>
-    <h3> Made by Polly Orlowska </h3> 
+    <h4> Made by Polly Orlowska </h4> 
     <p>
         &copy; 2023 Paulina Orlowska.
     </p>
