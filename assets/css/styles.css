@@ -4,7 +4,7 @@
   --peach: #F4BF96;
   --pastel-red: #CE5A67;
   --black: #1F1717;
-  --hover: #ce5a67;
+  --hover: #CE5A67;
 
 }
 
@@ -84,20 +84,22 @@ h2{
 
 
 /* about secion styling*/
-h3{
+.section-heading{
   color: var(--pastel-red);
   font-size: 1.7rem;
   margin: 0 auto;
   padding: 1rem;
+  text-align: center;
 }
+
+
 
 #about{
   display: flex;
   flex-direction: column;
- 
 }
 
-img{
+#about > img{
   flex-shrink: 0;
   width: 9rem;
   height: 12rem;
@@ -115,81 +117,86 @@ img{
 
 /* work secion styling*/
 
-/*#work{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 9rem);
-  grid-template-areas:
-  "h3Work"
-  "Project1"
-  "Project2"
-  "Project3"
-  "Project4"
-  "Project5";
-}*/
-
-#h3Work{
-  grid-area: span;
-  text-align: center;
+.section-body{
   padding: 1rem;
-  margin: 0px auto;
-}
-
-#Project1{
-  grid-area: Project1;
-  background-image: url("../images/Horiseon.png");
-  
-}
-
-#Project2{
-  grid-area: Project2;
-  background-image: url("../images/02-portfolio-2.jpg");
-
-}
-
-#Project3{
-  grid-area: Project3;
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-#Project4{
-  grid-area: Project4;
-  background-image: url("../images/02-portfolio-4.jpg");
-}
-
-#Project5{
-  grid-area: Project5;
-  background-image: url("../images/02-portfolio-1.jpg");
 }
 
 .GridArea{
   position: relative;
+  height:9em;
+  
 }
 
+.projectImage{
+  height:9em;
+  width:100%;
+  opacity: 0.7;
+}
+
+.projectImage:hover{
+  opacity: 1;
+}
+
+#highlightProject{
+  height: 13rem;
+}
 .workOutline{
   background-color: var(--beige);
   display: inline-block;
   position: absolute;
   right: 5%;
   bottom: 10%;
+  padding: 0.5em;
 }
 
 
-.workOutline > a{
-  text-decoration: underline;
+.projectHeading{
+  font-weight:bold;
   color: var(--black);
-  font-size: 1.3em;
+  font-size: 1.3rem;
   background-color: var(--beige);
   margin: 0;
+
 }
 
-.workOutline >p{
+.projectBody{
   margin: 0;
+  font-style: italic;
+  font-weight: lighter;
   font-size: 0.90em;
+  color: rgb(86, 85, 85);
 }
 
+#Project1{
+  grid-area: Project1;
+  background-color: var(--peach);
+  height:13em;
+  
+}
+
+#Project2{
+  grid-area: Project2;
+  background-color: var(--peach);
+
+}
+
+#Project3{
+  grid-area: Project3;
+  background-color: var(--peach);
+}
+
+#Project4{
+  grid-area: Project4;
+  background-color: var(--peach);
+}
+
+#Project5{
+  grid-area: Project5;
+  background-color: var(--peach);
+}
 
 /* contact section styling*/
+
 
 .contact{
   display: flex;
@@ -217,34 +224,44 @@ footer{
 
 /* styling for bigger screens - tablets*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   header{
     flex-direction: row;
     justify-content: space-around;
   }
 
+
   #about {
     flex-direction: row;
     align-items: center;
   }
-  img{
+  .about > img{
     height: 12em;
     width: 9em;
   }
-  h3{
+  section{
+    display: flex;
+  
+  }
+  .section-heading{
     border-right: 3px solid black;
     margin-right: 0.5em;
     margin-left: 0px;
+    min-width: 200px;
+  }
+
+  .section-body{
+    width:100%;
   }
 
   #work{
     display: grid;
-    grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 17rem 12rem 12rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 20% 20%; 
     grid-template-areas:
-    "h3Work Project1 Project1"
-    "h3Work Project2 Project3"
-    "h3Work Project4 Project5";
+    "Project1 Project1"
+    "Project2 Project3"
+    "Project4 Project5";
   }
 
   .contact{
@@ -253,8 +270,9 @@ footer{
   }
   .links{
     padding: 1em 2em 1em 1em
-    
   }
 
 }
+
+
 
