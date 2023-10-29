@@ -26,7 +26,7 @@ To access the webpage please follow [THIS LINK](https://porlowska.github.io/porl
 
 This application can be used to showcase skills and project to the future employers or colleagues, as well as it is easy accessible place to store any showcase worth project. 
 
-![Website overview](assets/images/screenshot.png)
+![Website overview](assets/images/Screenshot.png)
 
 
 ## Credits
