@@ -45,6 +45,8 @@ tutorials from:
 [CSS tips grids](https://css-tricks.com/snippets/css/complete-guide-grid/),
 [CSS tips flexboc](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
+Tutoring class form: David Elutilo
+
 
 ## License
 MIT License
