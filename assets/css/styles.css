@@ -4,7 +4,7 @@
   --peach: #F4BF96;
   --pastel-red: #CE5A67;
   --black: #1F1717;
-  --hover: c;
+  --hover: #ce5a67;
 
 }
 
@@ -115,7 +115,7 @@ img{
 
 /* work secion styling*/
 
-#work{
+/*#work{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 9rem);
@@ -126,7 +126,7 @@ img{
   "Project3"
   "Project4"
   "Project5";
-}
+}*/
 
 #h3Work{
   grid-area: span;
