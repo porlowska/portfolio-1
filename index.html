@@ -38,63 +38,95 @@
 
   <main>
     <!-- about me -->
-    <section class="about" id="about">
-      <h3>About Me</h3>
+    <section class="about" >
+      <h3 class="section-heading">About Me</h3>
+      <div class="section-body" id="about">
       <img src="assets/images/IMG_6230.jpg" alt="profile picture"/>
       <p id="aboutDetail">
         I'm Polly Orlowska, currently on my journey to becoming a front-end web developer. I'm currently working towards my Front End Web Development Certification through a rigorous bootcamp.<br>
         My passion lies in crafting websites, bringing together the art of design and the precision of coding to create seamless online experiences. While I may be new to the field, I bring a unique set of transferrable soft skills to the table. I thrive as a team player, value professionalism, and embrace problem-solving as a way to overcome challenges.
       </p>
+      </div>
+  
     </section>
 
     <!-- portfolio container -->
-    <section class="work" id="work">
-      <h3 id="h3Work">Work</h3>
+    <section class="work" >
+      <h3 class="section-heading" id="h3Work">Work</h3>
+      <div class="section-body" id="work">
 
-      <div id="Project1" class="GridArea">
-        <div class="workOutline">
-          <a href="https://porlowska.github.io/01-Horiseon-Marketing/" target="_blank" rel="noopener noreferrer"> Horiseon </a>
-          <p> HTML | CSS | Accessibility </p> 
+
+        <div id="Project1" class="GridArea">
+
+          <a href="https://porlowska.github.io/01-Horiseon-Marketing/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/Horiseon.png" class="projectImage" id="highlightProject"/></a>
+
+          <div class="workOutline">
+            <p class="projectHeading"> Horiseon </p>
+            <p class="projectBody"> HTML | CSS  </p> 
+          </div>
+
+        </div>
+
+        <div id="Project2" class="GridArea">
+
+          <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/02-portfolio-1.jpg" class="projectImage"/></a>
+  
+            <div class="workOutline">
+              <p class="projectHeading"> CSS Layouts </p>
+              <p class="projectBody"> HTML | CSS  </p> 
+            </div>
+
+        </div>
+
+        <div id="Project3" class="GridArea">
+
+          <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/02-portfolio-2.jpg" class="projectImage"/></a>
+  
+            <div class="workOutline">
+              <p class="projectHeading"> Java Script </p>
+              <p class="projectBody"> JavaScript </p> 
+            </div>
+
+        </div>
+
+        <div id="Project4" class="GridArea">
+
+          <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/02-portfolio-3.jpg" class="projectImage"/></a>
+  
+            <div class="workOutline">
+              <p class="projectHeading"> Web Project 1 </p>
+              <p class="projectBody"> JavaScript </p> 
+            </div>
+
+        </div>
+
+        <div id="Project5" class="GridArea">
+
+          <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/02-portfolio-4.jpg" class="projectImage"/></a>
+
+          <div class="workOutline">
+            <p class="projectHeading"> Web Project 2 </p>
+            <p class="projectBody"> HTML | CSS | JavaScript </p> 
+          </div>
+
         </div>
       </div>
-
-      <div id="Project2" class="GridArea">
-        <div class="workOutline">
-          <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer"> CSS Grids </a>
-          <p> HTML | CSS </p>
-        </div>
-      </div>
-
-      <div id="Project3" class="GridArea">
-        <div class="workOutline">
-         <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer"> JavaScript </a>
-         <p> JavaScript </p> 
-        </div>
-      </div>
-
-      <div id="Project4" class="GridArea">
-        <div class="workOutline">
-          <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer"> WebProject </a>
-          <p> JavaScript </p> 
-        </div>
-      </div>
-
-      <div id="Project5" class="GridArea">
-        <div class="workOutline">
-          <a href="assets/images/404-error.png" target="_blank" rel="noopener noreferrer"> Web Project 2 </a>
-         <p> HTML | CSS | JavaScript </p> 
-        </div>
-      </div>
-
     </section>
 
     <!-- contact -->
-    <section class="contact" id="contact">
-      <h3>Contact Me</h3>
-      <a href="mailto:polly.orlowska@gmail.com" class="links" id="email">email</a>
-      <a href="tel:07494532324" class="links" id="phone">Phone</a>
-      <a href="https://github.com/porlowska" class="links" id="github">GitHub</a>
-      <a href="https://uk.linkedin.com/" class="links" id="linkedin">Linkedin</a>
+    <section id="contact">
+      <h3 class="section-heading">Contact Me</h3>
+      <div class="section-body contact">
+        <a href="mailto:sample@example.com" class="links" id="email">email</a>
+        <a href="tel:07494532324" class="links" id="phone">Phone</a>
+        <a href="https://github.com/porlowska" class="links" id="github">GitHub</a>
+        <a href="https://uk.linkedin.com/" class="links" id="linkedin">Linkedin</a>
+      </div>
     </section>
   </main>
   <footer>
